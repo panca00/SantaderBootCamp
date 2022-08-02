@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Basis</title>
+    <!--Flex grow so funciona se nao tive usando o justify-content-->
+    <style>
+        .flex-container{
+
+            display:flex;
+            border: 1px solid black;
+            max-width: 1000px;
+
+        
+      
+        }
+        .flex-item{
+            background-color: orange;
+            padding: 10px;
+            margin: 5px;
+            color: wheat;
+            text-align: center;
+            
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .b-0{
+            flex-basis: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+        .w100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>B-auto</p>
+    <div class="flex-container">
+        <div class="flex-item bauto fg-1">AAAAAAAA</div>
+        <div class="flex-item bauto fg-1">BBBB</div>
+        <div class="flex-item bauto fg-1">C</div>
+        <div class="flex-item bauto fg-2">DEF</div>
+    </div>
+    <p>B-0</p>
+    <div class="flex-container">
+        <div class="flex-item b-0 fg-1">AAAAAAAA</div>
+        <div class="flex-item b-0 fg-1">BBBB</div>
+        <div class="flex-item b-0 fg-1">C</div>
+        <div class="flex-item b-0 fg-2">DEF</div>
+    </div>
+    <P>Basis + width</P>
+    <div class="flex-container">
+        <div class="flex-item w100 fg-2">AA</div>
+        <div class="flex-item w100 fg-2">BBB</div>
+        <div class="flex-item w100 fg-2">CCC</div>
+        <div class="flex-item w100 fg-2">DEF</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Aling-self</title>
+    <style>
+        .flex-container{
+
+            display:flex;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            max-width: 350px;
+            
+      
+        }
+        .flex-item{
+            flex: 1;
+            background:brown;
+            color: wheat;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .align-container{
+            align-items: center;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container align-container">
+        <div class="flex-item auto">AAA</div>
+        <div class="flex-item auto">BB</div>
+        <div class="flex-item auto">123</div>
+        <div class="flex-item auto">Lorem ipsum dolor</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item center">AAA</div>
+        <div class="flex-item end">BB</div>
+        <div class="flex-item start">123</div>
+        <div class="flex-item base">Lorem ipsum dolor</div>
+    </div>
+</body>
+</html>

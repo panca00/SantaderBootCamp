@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Align-Content</title>
+    <style>
+        .flex-container{
+
+            display:flex;
+            border: 1px solid black;
+            max-width: 400px;
+            height: 400px;
+            max-width: 300px;
+            flex-wrap: wrap;
+        
+      
+        }
+        .flex-item{
+            background-color: orange;
+            padding: 0 5px;
+            color: wheat;
+            text-align: center;
+            flex: 1;
+        }
+        .streech{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .around{
+            align-content: space-around;
+        }
+        .Between{
+            align-content: space-between;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <p>Streech</p>
+    <div class="flex-container streech">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="flex-item">Quas quibusdam quisquam, eaque iusto quis at labore tempora.</div>
+        <div class="flex-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat asperiores quas quia iure minus provident alias autem quam est quaerat.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates veniam et provident quia.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+    <p>center</p>
+    <div class="flex-container center">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="flex-item">Quas quibusdam quisquam, eaque iusto quis at labore tempora.</div>
+        <div class="flex-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat asperiores quas quia iure minus provident alias autem quam est quaerat.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates veniam et provident quia.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+    <p>Flex Start</p>
+    <div class="flex-container flex-start">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="flex-item">Quas quibusdam quisquam, eaque iusto quis at labore tempora.</div>
+        <div class="flex-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat asperiores quas quia iure minus provident alias autem quam est quaerat.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates veniam et provident quia.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+    <p>Flex End</p>
+    <div class="flex-container flex-end">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="flex-item">Quas quibusdam quisquam, eaque iusto quis at labore tempora.</div>
+        <div class="flex-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat asperiores quas quia iure minus provident alias autem quam est quaerat.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates veniam et provident quia.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+    <p>Around</p>
+    <div class="flex-container around">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="flex-item">Quas quibusdam quisquam, eaque iusto quis at labore tempora.</div>
+        <div class="flex-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat asperiores quas quia iure minus provident alias autem quam est quaerat.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates veniam et provident quia.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+    <p>Between</p>
+    <div class="flex-container Between">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="flex-item">Quas quibusdam quisquam, eaque iusto quis at labore tempora.</div>
+        <div class="flex-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat asperiores quas quia iure minus provident alias autem quam est quaerat.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates veniam et provident quia.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+</body>
+</html>
