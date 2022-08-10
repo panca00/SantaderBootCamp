@@ -1,0 +1,16 @@
+No terminal com o Node.js instalado e NPM, digite os seguintes comandos:
+npm init
+npm install --save-dev typescript
+npm install lite-serve
+tsc --init
+
+
+
+Adicionar no package.json os seguintes scripts:
+"start": "lite-server",
+"watch":"tsc --watch"
+
+Comandos para rodar 
+npm start
+npm run watch
+configurações adicionais, pesquisar!
